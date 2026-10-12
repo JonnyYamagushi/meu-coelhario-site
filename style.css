@@ -1,0 +1,99 @@
+/* Meu Coelhário, site público. Verde de pasto + feno, sem fontes externas. */
+:root {
+  --verde: #3e6b48;
+  --verde-escuro: #2c4f34;
+  --verde-claro: #d7e8da;
+  --feno: #7a5a20;
+  --feno-claro: #f3e4c4;
+  --fundo: #f6f3ec;
+  --superficie: #ffffff;
+  --texto: #1a1c19;
+  --texto-suave: #4a4f49;
+  --borda: #cfd8cf;
+  --raio: 16px;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --verde: #a3d4ab;
+    --verde-escuro: #cfe9d3;
+    --verde-claro: #27402c;
+    --feno: #e6c17f;
+    --feno-claro: #4a3a16;
+    --fundo: #1a1c19;
+    --superficie: #242723;
+    --texto: #e6e3dc;
+    --texto-suave: #bcc1b9;
+    --borda: #3f473f;
+  }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  color: var(--texto);
+  background: var(--fundo);
+}
+a { color: var(--verde); text-decoration-thickness: 2px; text-underline-offset: 3px; }
+a:hover { color: var(--verde-escuro); }
+a:focus-visible {
+  outline: 3px solid var(--feno);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+.skip {
+  position: absolute; left: -999px; top: 8px;
+  background: var(--superficie); color: var(--texto); padding: 8px 12px;
+}
+.skip:focus { left: 8px; z-index: 10; }
+header.topo { border-bottom: 1px solid var(--borda); }
+.topo .linha {
+  max-width: 960px; margin: 0 auto;
+  display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;
+  padding: 12px 16px;
+}
+.marca { display: flex; align-items: center; gap: 12px; font-weight: 700; font-size: 1.1rem; color: var(--texto); text-decoration: none; }
+.marca svg { width: 36px; height: 36px; flex: none; }
+nav ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 4px; flex-wrap: wrap; }
+nav a { display: inline-block; padding: 10px 14px; border-radius: 12px; font-weight: 600; text-decoration: none; }
+nav a[aria-current="page"] { background: var(--verde-claro); color: var(--verde-escuro); }
+main { max-width: 760px; margin: 0 auto; padding: 24px 16px 48px; }
+.hero { padding: 16px 0 8px; }
+.hero h1 { font-size: clamp(1.9rem, 2.6vw + 1rem, 2.6rem); line-height: 1.15; margin: 0 0 12px; letter-spacing: -0.01em; }
+.hero .lead { font-size: 1.2rem; color: var(--texto-suave); margin: 0 0 20px; max-width: 42rem; }
+.etiquetas { list-style: none; padding: 0; margin: 0 0 8px; display: flex; flex-wrap: wrap; gap: 8px; }
+.etiquetas li {
+  background: var(--feno-claro); color: var(--feno); font-weight: 600; font-size: 0.95rem;
+  padding: 6px 12px; border-radius: 10px;
+}
+section { margin-top: 40px; }
+h2 { font-size: 1.35rem; color: var(--verde); margin: 0 0 12px; }
+p { margin: 0 0 12px; }
+ul.lista { padding-left: 1.2rem; margin: 0 0 12px; }
+ul.lista li { margin-bottom: 6px; }
+.grade { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin: 0; padding: 0; list-style: none; }
+.grade li { padding: 14px 16px; background: var(--superficie); border: 1px solid var(--borda); border-radius: var(--raio); }
+.grade strong { display: block; color: var(--verde-escuro); margin-bottom: 2px; }
+.aviso {
+  display: flex; gap: 12px; align-items: flex-start;
+  background: var(--verde-claro); color: var(--verde-escuro);
+  border-radius: 12px; padding: 14px 16px; margin: 16px 0;
+}
+.aviso p { margin: 0; }
+.aviso a { color: inherit; }
+.aviso svg { width: 24px; height: 24px; flex: none; margin-top: 2px; }
+.contato { background: var(--superficie); border: 1px solid var(--borda); border-radius: var(--raio); padding: 20px; }
+.botao {
+  display: inline-block; margin-top: 8px; padding: 12px 20px; border-radius: 12px;
+  background: var(--verde); color: #fff; font-weight: 600; text-decoration: none;
+}
+.botao:hover { background: var(--verde-escuro); color: #fff; }
+@media (prefers-color-scheme: dark) { .botao, .botao:hover { color: #0f1f13; } }
+footer { border-top: 1px solid var(--borda); margin-top: 48px; }
+footer .linha { max-width: 760px; margin: 0 auto; padding: 20px 16px; display: flex; flex-wrap: wrap; gap: 8px 20px; color: var(--texto-suave); font-size: 0.95rem; }
+footer a { font-weight: 600; }
+dl.datas { margin: 0 0 16px; }
+dl.datas dt { font-weight: 600; }
+dl.datas dd { margin: 0 0 8px; }

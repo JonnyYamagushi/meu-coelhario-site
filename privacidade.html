@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacidade · Meu Coelhário</title>
+  <meta name="description" content="Política de privacidade do aplicativo Meu Coelhário: os dados ficam só no seu celular, sem conta, anúncios ou rastreamento; a internet é usada apenas no backup opcional no seu Google Drive.">
+  <meta name="color-scheme" content="light dark">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#conteudo">Ir para o conteúdo</a>
+  <header class="topo">
+    <div class="linha">
+      <a class="marca" href="index.html" aria-label="Meu Coelhário, página inicial">
+        <svg viewBox="0 0 36 36" aria-hidden="true" focusable="false">
+          <rect width="36" height="36" rx="9" fill="#3e6b48"/>
+          <ellipse cx="13" cy="11" rx="3" ry="7.5" fill="#f6f3ec"/>
+          <ellipse cx="23" cy="11" rx="3" ry="7.5" fill="#f6f3ec"/>
+          <circle cx="18" cy="23" r="8.5" fill="#f6f3ec"/>
+          <circle cx="15" cy="22" r="1.1" fill="#3e6b48"/>
+          <circle cx="21" cy="22" r="1.1" fill="#3e6b48"/>
+          <path d="M16.5 25.5 Q18 27 19.5 25.5" stroke="#b0843a" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+        </svg>
+        <span>Meu Coelhário</span>
+      </a>
+      <nav aria-label="Principal">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="privacidade.html" aria-current="page">Privacidade</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <div class="hero">
+      <h1>Política de Privacidade</h1>
+      <p class="lead">Como o aplicativo Meu Coelhário trata as informações que você registra nele.</p>
+      <dl class="datas">
+        <dt>Vigência</dt>
+        <dd>A partir de 12 de outubro de 2026.</dd>
+      </dl>
+    </div>
+
+    <section aria-labelledby="onde-ficam">
+      <h2 id="onde-ficam">Onde os dados ficam</h2>
+      <p>Tudo o que você cadastra no aplicativo (coelhos, coberturas, ninhadas, pesagens, saúde, tarefas, fotos e configurações) fica gravado apenas no seu celular, num banco de dados local (SQLite). O aplicativo não envia esses dados para nenhum servidor nosso.</p>
+    </section>
+
+    <section aria-labelledby="sem-conta">
+      <h2 id="sem-conta">Sem conta, anúncios ou rastreamento</h2>
+      <ul class="lista">
+        <li>Não é preciso criar conta nem fazer login para usar o aplicativo.</li>
+        <li>O aplicativo não mostra anúncios.</li>
+        <li>Não há rastreamento, estatísticas de uso (analytics) nem coleta de identificadores do aparelho.</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="internet">
+      <h2 id="internet">Quando a internet é usada</h2>
+      <p>O aplicativo funciona sem internet. A conexão só é usada se você ativar o backup opcional no Google Drive e escolher a conta Google na qual os backups serão guardados.</p>
+      <p>Nesse caso, o aplicativo pede ao Google a permissão <strong>drive.file</strong>. Com ela, o aplicativo só consegue ver e alterar os arquivos que ele mesmo criou, dentro da pasta <strong>"Meu Coelhário - Backups"</strong> do Drive da sua própria conta. Ele não tem acesso aos seus outros arquivos do Drive.</p>
+      <p>O arquivo de backup contém o banco de dados, as fotos e as configurações do aplicativo, e fica sob o seu controle, na sua conta.</p>
+    </section>
+
+    <section aria-labelledby="terceiros">
+      <h2 id="terceiros">Compartilhamento</h2>
+      <p>Nenhum dado é compartilhado com terceiros. O único serviço externo envolvido é o Google Drive, e somente quando você ativa o backup, para guardar os seus arquivos na sua conta.</p>
+    </section>
+
+    <section aria-labelledby="exclusao">
+      <h2 id="exclusao">Como apagar os dados</h2>
+      <ul class="lista">
+        <li><strong>No celular:</strong> desinstalar o aplicativo apaga todos os dados locais.</li>
+        <li><strong>No Google Drive:</strong> os backups podem ser apagados por você a qualquer momento, na tela "Backup e restauração" do aplicativo ou diretamente no Drive, na pasta "Meu Coelhário - Backups".</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="mudancas">
+      <h2 id="mudancas">Mudanças nesta política</h2>
+      <p>Se esta política mudar, a nova versão será publicada nesta página, com a data de vigência atualizada.</p>
+    </section>
+
+    <section aria-labelledby="contato" class="contato">
+      <h2 id="contato">Contato</h2>
+      <p>Dúvidas, sugestões ou pedidos sobre o aplicativo e seus dados podem ser enviados pelo perfil do desenvolvedor no GitHub.</p>
+      <!-- TODO: e-mail de suporte -->
+      <a class="botao" href="https://github.com/JonnyYamagushi" rel="noopener">Perfil no GitHub</a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="linha">
+      <span>Meu Coelhário · aplicativo de uso pessoal</span>
+      <a href="index.html">Início</a>
+      <a href="privacidade.html">Política de Privacidade</a>
+    </div>
+  </footer>
+</body>
+</html>
